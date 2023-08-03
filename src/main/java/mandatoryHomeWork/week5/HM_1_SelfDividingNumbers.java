@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class HM_1_SelfDividingNumbers {
 	
-	//Pseudocode
+	//Pseudocode   https://leetcode.com/problems/self-dividing-numbers/
 	
 	/*
 	 * Declare a list to return the output 

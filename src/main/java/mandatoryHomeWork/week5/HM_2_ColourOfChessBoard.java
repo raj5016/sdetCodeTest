@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class HM_2_ColourOfChessBoard {
 	
+	//https://leetcode.com/problems/determine-color-of-a-chessboard-square/
+	
 	@Test
 	public void test() {
 		Assert.assertEquals(false, findColourOfGivenCoordinates("a1"));
