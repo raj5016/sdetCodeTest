@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class AverageValueOfEvenNumbersInList {
+public class HM_6_AverageValueOfEvenNumbersInList {
 	
 	
 	@Test
