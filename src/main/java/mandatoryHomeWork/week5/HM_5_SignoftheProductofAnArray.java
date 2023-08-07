@@ -5,6 +5,7 @@ import org.testng.Assert;
 
 public class HM_5_SignoftheProductofAnArray {
 	
+	//https://leetcode.com/problems/sign-of-the-product-of-an-array/
 	@Test
 	public void test() {
 		Assert.assertEquals(1, arraySign(new int[] {-1,-2,-3,-4,3,2,1}));

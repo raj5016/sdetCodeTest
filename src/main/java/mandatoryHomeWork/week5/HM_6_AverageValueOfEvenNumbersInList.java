@@ -5,6 +5,7 @@ import org.testng.Assert;
 
 public class HM_6_AverageValueOfEvenNumbersInList {
 	
+	//https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/description/
 	
 	@Test
 	public void test() {
