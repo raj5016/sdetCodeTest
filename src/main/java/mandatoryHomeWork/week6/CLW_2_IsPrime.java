@@ -1,10 +1,10 @@
-package com.week2.homework;
+package mandatoryHomeWork.week6;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 
-public class PrimeOrNot {
+public class CLW_2_IsPrime {
 	
 	
 	@Test
