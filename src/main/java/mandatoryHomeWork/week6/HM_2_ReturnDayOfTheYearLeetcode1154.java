@@ -3,7 +3,7 @@ package mandatoryHomeWork.week6;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ReturnDayOfTheYearLeetcode1154 {
+public class HM_2_ReturnDayOfTheYearLeetcode1154 {
 	
 	//https://leetcode.com/problems/day-of-the-year/
 	
