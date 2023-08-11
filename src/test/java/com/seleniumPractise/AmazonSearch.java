@@ -11,11 +11,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class AmazonSearch {
+	
+	//https://samedesilva.medium.com/how-to-get-driver-path-in-selenium-java-4-10-0-624694af9691
+	//Now selenium manager will download exe automatically and store in user/cache/selenium
 	WebDriver driver=new ChromeDriver();
 	
 	@Test
 	public void searchProducts() {
-		
+   
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://www.amazon.in/");
