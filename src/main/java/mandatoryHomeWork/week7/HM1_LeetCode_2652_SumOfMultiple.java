@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class HM1_LeetCode_2652_SumOfMultiple {
 	
+	//https://leetcode.com/problems/sum-multiples/
 	
 	public int returnSumOfMultiple(int n) {
 		

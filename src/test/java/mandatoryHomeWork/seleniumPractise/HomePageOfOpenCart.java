@@ -1,4 +1,4 @@
-package com.seleniumPractise;
+package mandatoryHomeWork.seleniumPractise;
 
 import java.time.Duration;
 
