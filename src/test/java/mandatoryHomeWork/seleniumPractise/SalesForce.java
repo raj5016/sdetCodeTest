@@ -17,7 +17,7 @@ public class SalesForce {
 		driver.findElement(By.id("username")).sendKeys("hari.radhakrishnan@qeagle.com");
 		driver.findElement(By.id("password")).sendKeys("Leaf$1234");
 		driver.findElement(By.id("Login")).click();
-		driver.findElement(By.xpath("//div[@class='slds-icon-waffle']")).click();
+		driver.findElement(By.xpath("//div[@class='slds-icon-waffle']"));
 		driver.findElement(By.xpath("//button[text()='View All']")).click();
 		driver.findElement(By.id("//p[text()='Sales']//following::p[text()='Manage your sales process with accounts, leads, opportunities,...']")).click();
 		driver.findElement(By.id("//p[text()='Accounts']")).click();

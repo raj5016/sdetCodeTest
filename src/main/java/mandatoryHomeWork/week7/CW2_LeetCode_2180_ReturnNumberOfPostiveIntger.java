@@ -3,7 +3,9 @@ package mandatoryHomeWork.week7;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class CW2_ReturnNumberOfPostiveIntger {
+public class CW2_LeetCode_2180_ReturnNumberOfPostiveIntger {
+	
+	//https://leetcode.com/problems/count-integers-with-even-digit-sum/
 	/*
 	 * Given a positive integer num, return the number of positive integers less than or equal to num whose digit sums are even.
 		The digit sum of a positive integer is the sum of all its digits.
@@ -22,6 +24,8 @@ public class CW2_ReturnNumberOfPostiveIntger {
 		2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.
 	 */
 	
+	//Taken 26 ms in leetcode
+	
 	@Test
 	public void test() {
 		Assert.assertEquals(14, returnTheCountOfPostiveIntgerNum(30));
@@ -30,6 +34,11 @@ public class CW2_ReturnNumberOfPostiveIntger {
 	@Test
 	public void test1() {
 		Assert.assertEquals(2, returnTheCountOfPostiveIntgerNum(4));
+	}
+	
+	@Test
+	public void test2() {
+		Assert.assertEquals(14, optimizeSolution(30));
 	}
 	
 	public int returnTheCountOfPostiveIntgerNum(int num) {
@@ -56,4 +65,27 @@ public class CW2_ReturnNumberOfPostiveIntger {
 		return count;
 
 	}
+	
+	//Method 2 
+	
+	public int optimizeSolution(int num) {
+		int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (isDigitSumEven(i)) {
+                count++;
+            }
+        }
+        return count;
+	}
+	
+	public boolean isDigitSumEven(int num) {
+        int sum = 0;
+        int remaindar=0;
+        while (num > 0) {
+        	remaindar= num % 10;
+        	sum	=remaindar+sum;
+            num = num/10;
+        }
+        return sum % 2 == 0;
+    }
 }
