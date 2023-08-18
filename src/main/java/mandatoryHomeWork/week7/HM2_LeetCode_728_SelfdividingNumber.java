@@ -1,4 +1,4 @@
-package mandatoryHomeWork.week5;
+package mandatoryHomeWork.week7;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,19 +7,8 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_1_SelfDividingNumbers {
+public class HM2_LeetCode_728_SelfdividingNumber {
 	
-	//Pseudocode   https://leetcode.com/problems/self-dividing-numbers/
-	
-	/*
-	 * Declare a list to return the output 
-	 * And Initialize the count 
-	 * Input is two Integer number
-	 * Initialize a loop with left as start and right as end
-	 * Have a condition if n is greater than 9,the individual number and 
-	 * 					divide with input number and verify it is equal to 0
-	 * 
-	 */
 	
 	//https://leetcode.com/problems/self-dividing-numbers/
 		
@@ -27,6 +16,12 @@ public class HM_1_SelfDividingNumbers {
 	public void Test() {
 		System.out.println(returnListOfNumbersWhichIsSelfDividing(1, 22));
 		Assert.assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9,11,12,15,22), returnListOfNumbersWhichIsSelfDividing(1, 22));
+	}
+	
+	@Test
+	public void Test1() {
+		System.out.println(returnListOfNumbersWhichIsSelfDividing(47, 85));
+		Assert.assertEquals(Arrays.asList(48,55,66,77), returnListOfNumbersWhichIsSelfDividing(47, 85));
 	}
 	
 	public List<Integer> returnListOfNumbersWhichIsSelfDividing(int left ,int right ){
@@ -43,6 +38,9 @@ public class HM_1_SelfDividingNumbers {
 	}
 	
 	public boolean check(int n) {
+		if(n<=0) {
+			return false;
+		}
 		int temp=n;
 		while(temp!=0) {
 			int remaindar=temp%10;
