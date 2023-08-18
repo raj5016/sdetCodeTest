@@ -38,9 +38,6 @@ public class HM2_LeetCode_728_SelfdividingNumber {
 	}
 	
 	public boolean check(int n) {
-		if(n<=0) {
-			return false;
-		}
 		int temp=n;
 		while(temp!=0) {
 			int remaindar=temp%10;
