@@ -8,7 +8,6 @@ public class HM1_LeetCode_605_CanPlaceFlowers {
 	
 	
 	//https://leetcode.com/problems/can-place-flowers/description/
-	//https://www.youtube.com/watch?v=izloFEfOl1Q
 	
 	@Test
 	public void test() {
