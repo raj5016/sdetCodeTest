@@ -4,9 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class CW1_ReverseAndReverseNumber {
+public class CW1_LeetCode_2119_DoubleReverseTheNumber {
 	
 	/*
+	 *  https://leetcode.com/problems/a-number-after-a-double-reversal/
+	 *  
 	 * PROBLEM: 
 			Reversing an integer means to reverse all its digits.
 			
@@ -27,11 +29,31 @@ public class CW1_ReverseAndReverseNumber {
 	@Test
 	public void test() {
 		Assert.assertEquals(true, reverseNum(2021));
+		Assert.assertEquals(true, isSameAfterReversals(2021));
 	}
 	
 	@Test
 	public void test1() {
 		Assert.assertEquals(false, reverseNum(12300));
+		Assert.assertEquals(false, isSameAfterReversals(12300));
+	}
+	
+	@Test
+	public void test2() {
+		Assert.assertEquals(true, reverseNum(0));
+		Assert.assertEquals(true, isSameAfterReversals(0));
+	}
+	
+	@Test
+	public void test3() {
+		Assert.assertEquals(false, reverseNum(1800));
+		Assert.assertEquals(false, isSameAfterReversals(1800));
+	}
+	
+	@Test
+	public void test4() {
+		Assert.assertEquals(true, reverseNum(526));
+		Assert.assertEquals(true, isSameAfterReversals(526));
 	}
 	
 	
@@ -59,4 +81,14 @@ public class CW1_ReverseAndReverseNumber {
 		
 	}
 
+//Method 2:
+	
+	public boolean isSameAfterReversals(int num) {
+		if (num == 0)
+			return true;
+		else if (num % 10 == 0)
+			return false;
+		else
+			return true;
+	}
 }
