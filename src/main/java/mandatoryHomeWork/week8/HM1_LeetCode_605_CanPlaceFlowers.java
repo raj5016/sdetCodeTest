@@ -40,8 +40,8 @@ public class HM1_LeetCode_605_CanPlaceFlowers {
 		
 		for (int i = 0; i < flowerbed.length; i++) {
 			if(flowerbed[i]==0) {
-				//i-1 ,it will cause array index bound of exception,because i-1 , so we consider for first element
-				// there is no previous element so we can consider condition i==0
+				//i-1 ,i+1,it will cause array index bound of exception,so we consider for first element
+				// there is no previous element for first element and no next element for last element and so we can consider condition i==0
 				int prev=((i==0||flowerbed[i-1]==0)?0:1); 
 				
 				int next=((i==flowerbed.length-1 || flowerbed[i+1]==0)?0:1);
