@@ -33,14 +33,14 @@ public class FindDuplicateElementInAnArray {
 
 	public static int findDuplicate(ArrayList<Integer> arr){ //{1 3 4 2 2 }
 		int duplicateWElement = 0;
-        Set<Integer> seenElements = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for (Integer element : arr) {
-        	if (seenElements.contains(element)) {
+        	if (set.contains(element)) {
                 System.out.println("The first duplicate element is: " + element);
                 break; // Stop searching for more duplicates
             } else {
                 // Otherwise, add it to the seenElements set
-                seenElements.add(element);
+                set.add(element);
             }
         }
 		
