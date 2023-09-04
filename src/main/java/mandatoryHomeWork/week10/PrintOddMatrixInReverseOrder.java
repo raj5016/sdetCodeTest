@@ -3,7 +3,7 @@ package mandatoryHomeWork.week10;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PrintEvenMatrixInReverseOrder {
+public class PrintOddMatrixInReverseOrder {
 	
 
 	@Test
