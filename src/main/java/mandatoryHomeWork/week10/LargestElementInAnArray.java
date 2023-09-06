@@ -23,9 +23,6 @@ public class LargestElementInAnArray {
 				max=arr[i];
 			}
 		}
-		
-		
 		return max;
-		
 	}
 }
