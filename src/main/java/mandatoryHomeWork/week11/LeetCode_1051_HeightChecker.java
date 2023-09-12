@@ -1,13 +1,13 @@
 package mandatoryHomeWork.week11;
 
-import java.util.Arrays;
-
 import org.junit.Test;
 import org.testng.Assert;
 
 
 
 public class LeetCode_1051_HeightChecker {
+	
+	//https://leetcode.com/problems/height-checker/submissions/
 	
 	@Test
 	public void test() {
@@ -25,8 +25,9 @@ public class LeetCode_1051_HeightChecker {
 	}
 	
 	 public int heightChecker(int[] heights) {
-	        int[] heights1=Arrays.copyOf(heights, heights.length);
-	        
+	        //int[] heights1=Arrays.copyOf(heights, heights.length);
+	        int[] heights1=heights.clone();
+
 	        int temp=0;
 	        int indexCount=0;
 	        
@@ -39,6 +40,9 @@ public class LeetCode_1051_HeightChecker {
 	                    }
 	             }
 	        }
+	        
+	        // if manual reverse is not required, use Arrays.sort(heights)
+            // so 36 to 44 line is not required
 	        
 	         for(int i=0;i<heights.length;i++){
 	             if(heights[i]!=heights1[i]){
