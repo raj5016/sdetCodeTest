@@ -31,11 +31,11 @@ public class LeetCode_2325_DecodeTheMessage {
 		String output="";
 		
 		for (int n = 0; n < message.length(); n++) {
-				char c=message.charAt(n);
-				if(c==' ') {
-					output=output+c;
+				char msg=message.charAt(n);
+				if(msg==' ') {
+					output=output+msg;
 				}else {
-					char valueinMapTable=map.get(c);
+					char valueinMapTable=map.get(msg);
 					output=output+valueinMapTable;
 				}
 		}
