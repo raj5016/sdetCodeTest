@@ -11,7 +11,7 @@ public class CodeChef_MaximumCommonElement {
 	
 	/*
 	 * 
-	 * 
+	 * https://www.codechef.com/INTPREP_01/problems/PREP17?tab=statement
 	 * 
 	 * Given two arrays A and B, each of size N, where each array consists of distinct elements.
 			
