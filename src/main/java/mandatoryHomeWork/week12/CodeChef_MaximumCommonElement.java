@@ -56,7 +56,7 @@ public class CodeChef_MaximumCommonElement {
 		Assert.assertEquals(3, withoutSort_returnMaxCommonElement(new int[] {2,4,1}, new int[] {1,4,2}));
 	}
 	
-	//Withou sort---Time complexity O(N)
+	//Without sort---Time complexity O(N) and Two Pointer approach
 	public int withoutSort_returnMaxCommonElement(int[] input1,int[] input2) {
 		int maxCount=0;
 		Set<Integer> set1=new HashSet<Integer>();
@@ -68,10 +68,9 @@ public class CodeChef_MaximumCommonElement {
 		for (int i = 0; i < input2.length; i++) {
 			set2.add(i);
 		}
+		
 		int i=0,j=0;
 		while(i<input1.length&& j<input2.length) {
-			System.out.println(input1[i]);
-			System.out.println(input2[j]);
 			if(input1[i]==input2[j]) {
 				maxCount++;
 				i++;
