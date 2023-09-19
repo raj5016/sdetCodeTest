@@ -1,8 +1,5 @@
 package mandatoryHomeWork.week12;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.Test;
 import org.testng.Assert;
 
