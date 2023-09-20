@@ -14,8 +14,8 @@ public class LeetCode_2283_CheckIfNumberHasEqualDigit {
 	 * 2.Take each characters from the string and make it into character array
 	 * 3.Store the frequency of characters in frequency Array.
 	 * 4.Now find frequency of each index value and update the frequency array
-	 * 5.Now in another loop check up to constraint value check if frequency is zero or not .
-	 * 					If zero then return false otherwise the function will return true.
+	 * 5.Now in another loop check up to constraint value and take the digit and compare with frequency 
+	 * 					
 	 */
 	
 	@Test
