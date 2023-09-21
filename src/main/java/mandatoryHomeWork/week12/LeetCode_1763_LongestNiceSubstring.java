@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class LeetCode_1763_LongestNiceSubstring {
-	
+	//	https://leetcode.com/problems/longest-nice-substring/description/
 	
 	@Test
 	public void test() {
