@@ -41,8 +41,6 @@ public class SmallestSubSequences_DynamicPointer {
 		return sum<k && distance==Integer.MAX_VALUE ?-1: distance;   //Here we are checking that 
 							//total sum is less than k, and assigned distance is remained unchanged from its intial value
 							// then give the input as -1 or give the exact distance
-												
-
 	}
 
 }
