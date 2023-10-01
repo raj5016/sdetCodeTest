@@ -5,7 +5,8 @@ import java.util.Arrays;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM3_LeetCode_561_ArrayPartition {
+public class LeetCode_561_ArrayPartition {
+	//https://leetcode.com/problems/array-partition/
 	
 	@Test
 	public void test() {
