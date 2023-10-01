@@ -6,6 +6,16 @@ import org.testng.Assert;
 public class LeetCode_2544_AlternateDigitSum {
 	
 	//https://leetcode.com/problems/alternating-digit-sum/description/
+	/*
+	 * 
+			 * //Input: num
+		//Output : sum (int)
+		//Logic: initialize sum;
+		//1. Convert the given num to string and to char []
+		//2. Run a for loop, convert the char to inv using getNumericValue and store in digit
+		//3. subtract the digit from sum when th index is odd else add digit to sum
+		//4. return sum
+	 */
 	
 	@Test
 	public void test() {
