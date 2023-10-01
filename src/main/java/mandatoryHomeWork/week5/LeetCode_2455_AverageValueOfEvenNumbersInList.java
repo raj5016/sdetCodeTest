@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM_6_AverageValueOfEvenNumbersInList {
+public class LeetCode_2455_AverageValueOfEvenNumbersInList {
 	
 	//https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/description/
 	
