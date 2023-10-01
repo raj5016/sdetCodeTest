@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM_4_AlternateDigitSum {
+public class LeetCode_2544_AlternateDigitSum {
 	
 	//https://leetcode.com/problems/alternating-digit-sum/description/
 	
