@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_3_CalculateMoneyInLeetBank {
+public class LeetCode_1716_CalculateMoneyInLeetBank {
 	
 	//https://leetcode.com/problems/calculate-money-in-leetcode-bank/
 	
