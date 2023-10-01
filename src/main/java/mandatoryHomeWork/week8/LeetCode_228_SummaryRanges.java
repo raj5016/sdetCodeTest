@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM3_LeetCode_228_SummaryRanges {
+public class LeetCode_228_SummaryRanges {
 	
 		@Test
 		public void test() {

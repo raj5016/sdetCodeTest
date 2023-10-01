@@ -1,10 +1,12 @@
 package mandatoryHomeWork.week8;
 
 
+import java.util.HashSet;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM2_LeetCode_645_SetMismatch {
+public class LeetCode_645_SetMismatch {
 		// https://leetcode.com/problems/set-mismatch/
 
 	@Test
@@ -50,4 +52,30 @@ public class HM2_LeetCode_645_SetMismatch {
 		return new int[] {dup,miss};
 	}
 
+	// Another way
+	
+	public int[] returnDuplicateAndMissingNumber(int[]  arr) {
+			int dup=0,miss=0;
+			
+			HashSet<Integer> set=new HashSet<Integer>();
+			
+			
+			//finding the duplicate element in given array
+			for (int i = 0; i < arr.length; i++) {
+				if(set.contains(arr[i])) {
+					dup=arr[i];
+				}
+				set.add(arr[i]);
+			}
+			
+			//finding the missing element
+			
+			for (int i = 1; i <=arr.length; i++) {
+				if(set.contains(i)==false) {
+					miss=i;
+					break;
+				}
+			}
+		return new int[] {dup,miss};
+	}
 }

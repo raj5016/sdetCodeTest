@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class HM1_LeetCode_605_CanPlaceFlowers {
+public class LeetCode_605_CanPlaceFlowers {
 	
 	
 	//https://leetcode.com/problems/can-place-flowers/description/

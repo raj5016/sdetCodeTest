@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class CW1_LeetCode_2119_DoubleReverseTheNumber {
+public class LeetCode_2119_DoubleReverseTheNumber {
 	
 	/*
 	 *  https://leetcode.com/problems/a-number-after-a-double-reversal/

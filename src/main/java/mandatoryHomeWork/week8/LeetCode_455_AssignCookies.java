@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM4_LeetCode_455_AssignCookies {
+public class LeetCode_455_AssignCookies {
 	
 	@Test
 	public void test() {
