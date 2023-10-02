@@ -6,7 +6,7 @@ import java.util.HashSet;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DistributeCandiesLeetCode575 {
+public class LeetCode_575_DistributeCandies {
 	
 	//https://leetcode.com/problems/distribute-candies/description/
 	
