@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class CountofMatchesinTournament {
+public class LeetCode_1688_CountofMatchesinTournament {
 	
 	/*
 	 * https://leetcode.com/problems/count-of-matches-in-tournament/description/
