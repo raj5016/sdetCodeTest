@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class PowerofTwo {
+public class LeetCode_231_PowerofTwo {
 	
 	
 	/*https://leetcode.com/problems/power-of-two/description/
