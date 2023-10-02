@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class TwoSumLeetCode1 {
+public class LeetCode_1_TwoSum {
 	
 	/*
 	 * https://leetcode.com/problems/two-sum/description/
