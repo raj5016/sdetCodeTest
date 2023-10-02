@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_2_ColourOfChessBoard {
+public class LeetCode_1812_ColourOfChessBoard {
 	
 	//https://leetcode.com/problems/determine-color-of-a-chessboard-square/
 	
