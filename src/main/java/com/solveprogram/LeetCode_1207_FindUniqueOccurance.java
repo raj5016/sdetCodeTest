@@ -3,11 +3,10 @@ package com.solveprogram;
 import java.util.HashMap;
 import java.util.HashSet;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
-
-public class FindUniqueOccurance {
+public class LeetCode_1207_FindUniqueOccurance {
 	
 	
 	//1207-https://leetcode.com/problems/unique-number-of-occurrences/description/
