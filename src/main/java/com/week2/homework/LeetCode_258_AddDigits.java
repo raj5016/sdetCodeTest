@@ -3,7 +3,7 @@ package com.week2.homework;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AddDigitsLeetCode258 {
+public class LeetCode_258_AddDigits {
 	
 	/*https://leetcode.com/problems/add-digits/description/
 	 * 
