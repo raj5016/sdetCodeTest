@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class ArrangingCoinsLeetCode444 {
+public class LeetCode_444_ArrangingCoins {
 	
 	/*
 	 	https://leetcode.com/problems/arranging-coins/description/
