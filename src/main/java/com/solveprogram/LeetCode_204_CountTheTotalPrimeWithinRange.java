@@ -2,7 +2,7 @@ package com.solveprogram;
 
 import org.junit.Test;
 
-public class CountTheTotalPrimeWithinRange {
+public class LeetCode_204_CountTheTotalPrimeWithinRange {
 	
 	//204- https://leetcode.com/problems/count-primes/description/
 
