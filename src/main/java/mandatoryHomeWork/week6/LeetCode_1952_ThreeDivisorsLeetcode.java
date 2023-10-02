@@ -3,7 +3,7 @@ package mandatoryHomeWork.week6;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_1_ThreeDivisorsLeetcode1952 {
+public class LeetCode_1952_ThreeDivisorsLeetcode {
 	
 	/*
 	 * https://leetcode.com/problems/three-divisors/
