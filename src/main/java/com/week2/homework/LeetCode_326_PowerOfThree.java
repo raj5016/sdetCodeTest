@@ -3,7 +3,7 @@ package com.week2.homework;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PowerOfThree {
+public class LeetCode_326_PowerOfThree {
 	
 	/*https://leetcode.com/problems/power-of-three/description/
 	 * Given an integer n, return true if it is a power of three. Otherwise, return
