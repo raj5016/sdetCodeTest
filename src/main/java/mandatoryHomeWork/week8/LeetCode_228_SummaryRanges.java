@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 public class LeetCode_228_SummaryRanges {
 	
+	//https://leetcode.com/problems/summary-ranges/
+	
 		@Test
 		public void test() {
 			Assert.assertEquals(Arrays.asList("0->2","4->5","7"), summaryRanges(new int[] {0,1,2,4,5,7}));
