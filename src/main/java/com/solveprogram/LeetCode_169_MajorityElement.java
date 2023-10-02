@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-public class MajorityElement {
+public class LeetCode_169_MajorityElement {
 	
 	
 	
