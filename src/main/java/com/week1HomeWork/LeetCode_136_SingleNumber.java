@@ -2,14 +2,12 @@ package com.week1HomeWork;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
-
-public class SingleNumberLeetCode136 {
+public class LeetCode_136_SingleNumber {
 
 	/*
 	 * Given a non-empty array of integers nums, every element appears twice except
