@@ -2,6 +2,7 @@ package com.week1HomeWork;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 import org.junit.Assert;
@@ -9,7 +10,8 @@ import org.junit.Test;
 
 public class LeetCode_136_SingleNumber {
 
-	/*
+	/* https://leetcode.com/problems/single-number/description/
+	 * 
 	 * Given a non-empty array of integers nums, every element appears twice except
 	 * for one. Find that single one.
 	 * 
@@ -118,6 +120,21 @@ public int singleNumber1(int[] nums) {
         }
     }
    return nums[nums.length-1];
+}
+
+//4th method
+
+public int singleNumberByHashSet(int[] nums) {     
+	HashSet<Integer>  hset=new HashSet<Integer>();
+	for (int num : nums) {
+		if(hset.contains(num)) {
+			hset.remove(num);
+		}else {
+			hset.add(num);
+		}
+	}
+	return hset.iterator().next();
+
 }
 
 }
