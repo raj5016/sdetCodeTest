@@ -2,7 +2,7 @@ package com.week2.homework;
 
 import org.junit.Test;
 
-public class GetProfitFromBuyandSellStock {
+public class LeetCode_121_GetProfitFromBuyandSellStock {
 	
 	/*
 	 * 
