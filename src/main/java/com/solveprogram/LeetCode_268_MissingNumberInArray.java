@@ -2,13 +2,13 @@ package com.solveprogram;
 
 import java.util.Arrays;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
 
-public class MissingNumberInArray {
+public class LeetCode_268_MissingNumberInArray {
 	
-	
+		//https://leetcode.com/problems/missing-number/description/
 	/** 1) Did I understand the problem?  
 			 * 		-> If yes, go to next step !!
 			 * 
