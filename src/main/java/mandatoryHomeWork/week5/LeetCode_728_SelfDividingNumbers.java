@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_1_SelfDividingNumbers {
+public class LeetCode_728_SelfDividingNumbers {
 	
 	//Pseudocode   https://leetcode.com/problems/self-dividing-numbers/
 	
