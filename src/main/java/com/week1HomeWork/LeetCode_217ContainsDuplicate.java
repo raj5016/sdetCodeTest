@@ -8,7 +8,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class ContainsDuplicateLeetCode217 {
+public class LeetCode_217ContainsDuplicate {
 	
 	
 	/*Given an integer array nums, return true if any value appears at
