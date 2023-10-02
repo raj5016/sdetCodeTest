@@ -3,7 +3,7 @@ package mandatoryHomeWork.week9;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class CW2_LeetCode_1768_MergeString {
+public class LeetCode_1768_MergeString {
 	
 	//https://leetcode.com/problems/reverse-prefix-of-word/
 	

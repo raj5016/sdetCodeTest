@@ -3,7 +3,7 @@ package mandatoryHomeWork.week9;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class CW1_LeetCode_2000_StringReverseWithGivenPrefix {
+public class LeetCode_2000_StringReverseWithGivenPrefix {
 	
 	//https://leetcode.com/problems/reverse-prefix-of-word/
 	//Input= abcdefd ,ch=d	

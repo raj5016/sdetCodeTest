@@ -3,7 +3,7 @@ package mandatoryHomeWork.week9;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class CW3_LeetCode_1221_SplitAStringWithBalancedString {
+public class LeetCode_1221_SplitAStringWithBalancedString {
 	
 	//https://leetcode.com/problems/split-a-string-in-balanced-strings/description/
 	/*
