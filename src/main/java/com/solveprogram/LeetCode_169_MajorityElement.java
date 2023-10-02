@@ -1,15 +1,14 @@
 package com.solveprogram;
 
+import org.junit.Assert;
 import org.junit.Test;
-
-import junit.framework.Assert;
 
 public class LeetCode_169_MajorityElement {
 	
 	
 	
 	
-	/*
+	/*https://leetcode.com/problems/majority-element/description/
 	 * Pseudocode
 	 * 
 	 * 1.Intialize a variable count and result as 0
