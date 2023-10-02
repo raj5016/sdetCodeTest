@@ -3,9 +3,9 @@ package com.week2.homework;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PalindromeOrNot {
+public class LeetCode_9_PalindromeOrNot {
 	
-	/*
+	/* https://leetcode.com/problems/palindrome-number/description/
 	 * Pseudocode:
 	 * 
 	 * Input is 121
