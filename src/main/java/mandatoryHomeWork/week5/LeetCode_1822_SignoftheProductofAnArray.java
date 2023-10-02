@@ -3,7 +3,7 @@ package mandatoryHomeWork.week5;
 import org.junit.Test;
 import org.testng.Assert;
 
-public class HM_5_SignoftheProductofAnArray {
+public class LeetCode_1822_SignoftheProductofAnArray {
 	
 	//https://leetcode.com/problems/sign-of-the-product-of-an-array/
 	@Test
