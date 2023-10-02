@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM_4_DayOfWeek {
+public class LeetCode_1185_DayOfTheWeek {
 	
 	//https://leetcode.com/problems/day-of-the-week/
 	
