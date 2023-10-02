@@ -1,5 +1,7 @@
 package com.week2.classwork;
 
+import java.util.HashMap;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,7 +34,8 @@ public class TwoSumLeetCode1 {
 		
 		@Test
 		public void test2() {
-			Assert.assertArrayEquals(new int[] {1,2}, returnIndicesOfsumOfTwoNumIsEqualtoTarget(new int[] {3,2,4}, 6));
+			//Assert.assertArrayEquals(new int[] {1,2}, returnIndicesOfsumOfTwoNumIsEqualtoTarget(new int[] {3,2,4}, 6));
+			Assert.assertArrayEquals(new int[] {1,2}, returnIndicesOfsumOfTwoNumIsEqualtoTargetByHashMap(new int[] {3,2,4}, 6));
 		}
 		
 		@Test
@@ -50,6 +53,19 @@ public class TwoSumLeetCode1 {
 			}
 			return new int[] {};
 			
+		}
+		
+		//HashMap
+		public int[] returnIndicesOfsumOfTwoNumIsEqualtoTargetByHashMap(int[] arr,int target) {
+			HashMap<Integer, Integer> hmap=new HashMap<Integer, Integer>();
+			for (int i = 0; i < arr.length; i++) {
+				if(hmap.containsKey(target-arr[i])) {
+					return new int[] {hmap.get(target-arr[i]),i};
+				}else {
+					hmap.put(arr[i], i);
+				}
+			}
+		 return new int[]{0,0};
 		}
 	
 
