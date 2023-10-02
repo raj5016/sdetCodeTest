@@ -3,7 +3,7 @@ package com.week2.homework;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ClimbStairCase {
+public class LeetCode_70_ClimbStairCase {
 
 	/*
 	 * https://leetcode.com/problems/climbing-stairs/solutions/  (Asked in adobe)
