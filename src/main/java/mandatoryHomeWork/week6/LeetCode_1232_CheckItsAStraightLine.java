@@ -3,7 +3,7 @@ package mandatoryHomeWork.week6;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HM3_CheckItsAStraightLine {
+public class LeetCode_1232_CheckItsAStraightLine {
 	
 	//https://leetcode.com/problems/check-if-it-is-a-straight-line/description/
 	
