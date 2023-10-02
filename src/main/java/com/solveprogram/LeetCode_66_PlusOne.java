@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class PlusOne {
+public class LeetCode_66_PlusOne {
 	
 	//66.https://leetcode.com/problems/plus-one/description/
 	
