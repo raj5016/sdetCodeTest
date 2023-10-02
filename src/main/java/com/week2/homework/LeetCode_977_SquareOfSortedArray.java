@@ -4,7 +4,7 @@ import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SquareOfNumbersInAnArray {
+public class LeetCode_977_SquareOfSortedArray {
 	
 	/* https://leetcode.com/problems/squares-of-a-sorted-array/
 	 * Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
