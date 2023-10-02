@@ -7,7 +7,7 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FizzBuzz {
+public class LeetCode_412_FizzBuzz {
 
 	/*
 	 * Given an integer n, return a string array answer (1-indexed) where:
