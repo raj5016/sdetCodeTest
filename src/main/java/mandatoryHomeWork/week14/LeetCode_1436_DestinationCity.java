@@ -49,7 +49,7 @@ public class LeetCode_1436_DestinationCity {
 			destinationSet.add(path.get(1));
 		}
 
-		// Find the city is in destination city, if so remove it.
+		// Find the left side city is in destination city, if so remove it.
 		for (List<String> path : paths) {
 			destinationSet.remove(path.get(0));
 		}
