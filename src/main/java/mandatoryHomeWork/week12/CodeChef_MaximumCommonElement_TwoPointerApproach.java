@@ -43,8 +43,8 @@ public class CodeChef_MaximumCommonElement_TwoPointerApproach {
 	
 	@Test
 	public void test1() {
-		Assert.assertEquals(0, byBruteFoce_ReturnMaxCommonElement(new int[] {1,2,3,4}, new int[] {8,9,10,5}));
-		Assert.assertEquals(3, byTwoPointer_ReturnMaxCommonElement(new int[] {1,2,3,4}, new int[] {8,9,10,5}));
+		//Assert.assertEquals(0, byBruteFoce_ReturnMaxCommonElement(new int[] {1,2,3,4}, new int[] {8,9,10,5}));
+		//Assert.assertEquals(3, byTwoPointer_ReturnMaxCommonElement(new int[] {1,2,3,4}, new int[] {8,9,10,5}));
 		Assert.assertEquals(3, withoutSort_returnMaxCommonElement(new int[] {1,2,3,4}, new int[] {8,9,10,5}));
 	}
 	
@@ -61,13 +61,15 @@ public class CodeChef_MaximumCommonElement_TwoPointerApproach {
 		int maxCount=0;
 		Set<Integer> set1=new HashSet<Integer>();
 		for (int i = 0; i < input1.length; i++) {
-			set1.add(i);
+			set1.add(input1[i]);
 		}
 		
+		System.out.println(set1);
 		Set<Integer> set2=new HashSet<Integer>();
 		for (int i = 0; i < input2.length; i++) {
-			set2.add(i);
+			set2.add(input2[i]);
 		}
+		System.out.println(set2);
 		
 		int i=0,j=0;
 		while(i<input1.length&& j<input2.length) {

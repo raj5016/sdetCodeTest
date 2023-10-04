@@ -31,6 +31,7 @@ public class LeetCode_1984_MinimumDifferenceOfStudent_SlidingWindow {
 		System.out.println(sum);
 	}
 	
+	//1st approach
 	public int returnMinimumDifference(int[] nums,int k) {
 		Arrays.sort(nums);
 		int difference=Integer.MAX_VALUE;
@@ -39,7 +40,23 @@ public class LeetCode_1984_MinimumDifferenceOfStudent_SlidingWindow {
 		}
 		
 		return difference;
-		
-		
 	}
+	
+	//Another way
+	 public int minimumDifference(int[] nums, int k) {
+	        if(k==1){
+	            return 0;
+	        }
+	       Arrays.sort(nums);
+	       int i=0;
+	       int j=k-1;
+	       int diff=Integer.MAX_VALUE;
+
+	       while(j<nums.length){
+	          diff=Math.min(diff, nums[j]-nums[i]);
+	          i++;
+	          j++;
+	       }
+	    return diff;
+	    }
 }
