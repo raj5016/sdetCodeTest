@@ -5,11 +5,20 @@ import org.junit.Test;
 
 public class SmallestSubSequences_DynamicPointer {
 	
-	/*
+	/* https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
+	 * 
 	 * Given an array of postive integers, find the smallest subsequences array 
 	 * 	 length whose sum of element is greater than a given number k.    
 	 *  Input=[1,2,3,4,5]   k= 10  ,  Output 3
  			Solving method: dynamic window approach 
+ 			
+ 			    Pseudocode
+    1. add the index of right, till sum is greater than k
+    2. calculate the window size
+    3. reduce the left pointer, till sum is lesser or equal to k
+    4. do step 2 & 3, till right is greater than size of the arr and sum is less than the k
+
+    Time complexity = O[N], Space Complexity = O[1]
 	 */
 	
 	@Test
