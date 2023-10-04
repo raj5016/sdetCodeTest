@@ -26,7 +26,6 @@ public class TwoDimensionalMap_RetriveOperations {
 	
 	//Add data into two Dimensional Map
 	twoDimensionalMap.put(100, innerHashMap);
-
 	
 	//We can iterate with entrySetIterator
 	
