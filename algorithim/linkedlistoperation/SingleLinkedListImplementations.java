@@ -1,5 +1,8 @@
 package mandatoryHomeWork.week15;
 
+import java.util.LinkedList;
+
+import mandatoryHomeWork.week15.LeetCode_206_ReverseLinkedList.ListNode;
 
 public class SingleLinkedListImplementations {
 	
@@ -179,6 +182,43 @@ public class SingleLinkedListImplementations {
 
 	    return lastIndex;
 	}
+	
+	//====================================Remove all(index)==============================================
+	public void removeAll(int value) {
+		Node currentNode=head, previousNode=null;
+		
+		while(currentNode!=null){
+			if(currentNode.data==value) {
+				if(previousNode==null) {//for head
+					head=head.next;
+				}else if(currentNode.next==null) { //for tail
+					previousNode.next=null;
+					tail=previousNode;
+				}else {
+					previousNode.next=currentNode.next;
+					currentNode=currentNode.next;
+				}
+				size--;
+			}
+		}
+		
+		
+	}
+	
+	//=====================================reverse the node============================================
+	//Reverse the node
+		public void reverseTheNode() {
+			Node current=head;
+			Node prev=null;
+			Node tempNode;
+			while(current!=null) {
+				 tempNode=current.next;
+				 current.next=prev;
+				 prev=current;
+				 current=tempNode;
+			}
+			head=prev;
+		}
 
 	//=====================================Main Method==================================================
 	public static void main(String[] args) {
@@ -229,7 +269,12 @@ public class SingleLinkedListImplementations {
 		
 	    //8.get lastIndex of target
 	    System.out.println("The last index of 400:"+  obj1.lastIndexOf(400));
-	   
+	    
+	    //9. Reverse the node
+	    
+	    obj1.reverseTheNode();
+	    System.out.println("After Reverse");
+	    obj1.displayNodes();
 	    
 		
 	}
