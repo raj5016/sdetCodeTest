@@ -1,39 +1,44 @@
 package mandatoryHomeWork.week15;
 
-import java.util.LinkedList;
-
-import mandatoryHomeWork.week15.LeetCode_206_ReverseLinkedList.ListNode;
 
 public class SingleLinkedListImplementations {
 	
-	public class Node{
-		int data;
-		Node next;
-		
-		Node(int data){
-			this.data=data;
-			this.next=null;
-		}
-	}
-	
-	public Node head;
-	public Node tail;
+	public ListNode head;
+	public ListNode tail;
 	private int size;
 	
 	//=======================================Adding the nodes=====================================
 	public  void addNode(int data) {
 		if(head==null) {  //if head is null, then it is first and last element so assigning head and tail
-			tail=head=new Node(data);
+			tail=head=new ListNode(data);
 		}else {
-			tail.next=new Node(data);
+			tail.next=new ListNode(data);
 			tail=tail.next;
 		}
 		size++;
 	}
 	
+	//=======================================Adding the nodes=====================================
+	 // Add Data with Input array
+	 public ListNode addNode(int[] datas) {
+		 for (int data : datas) {
+			addNode(data);
+		}
+		return head;
+	 }
+	 
+	 //================================== Display Nodes===============================================
+	 public void displayNodes(ListNode node) {
+		 ListNode current=node;
+		 while(current!=null) {
+			 System.out.print(current.data+" ");
+			 current=current.next;
+		 }
+		 System.out.println();
+	 }
 	//=========================================Display============================================
 	public void displayNodes() {
-		Node current = head;
+		ListNode current = head;
 		while (current != null) {
 			System.out.print(current.data + " ");
 			current = current.next;
@@ -49,7 +54,7 @@ public class SingleLinkedListImplementations {
 	//=================================another way of getting size with loop==========================
 	public int getSizeWithLoop() {
 		int size=0;
-		Node current=head;
+		ListNode current=head;
 		while(current!=null) {
 			size++;
 			current=current.next;
@@ -71,8 +76,8 @@ public class SingleLinkedListImplementations {
 	    }
 
 	    // Initialize pointers for traversal.
-	    Node previous = null;
-	    Node current = head;
+	    ListNode previous = null;
+	    ListNode current = head;
 
 	    // Traverse the list to find the node with the data to remove.
 	    while (current != null && current.data != dataToRemove) {
@@ -118,7 +123,7 @@ public class SingleLinkedListImplementations {
 	        otherList.tail.next = head;
 	        head = otherList.head;
 	    } else {
-	        Node current = head;
+	        ListNode current = head;
 	        for (int i = 1; i < index; i++) {
 	            current = current.next;
 	        }
@@ -142,7 +147,7 @@ public class SingleLinkedListImplementations {
 	        throw new IllegalArgumentException("Invalid index");
 	    }
 
-	    Node newNode = new Node(value);
+	    ListNode newNode = new ListNode(value);
 	    if (index == 0) {
 	        // Insert at the beginning.
 	        newNode.next = head;
@@ -151,7 +156,7 @@ public class SingleLinkedListImplementations {
 	            tail = newNode; // Update tail if the list was empty.
 	        }
 	    } else {
-	        Node current = head;
+	        ListNode current = head;
 	        for (int i = 1; i < index; i++) {
 	            current = current.next;
 	        }
@@ -169,7 +174,7 @@ public class SingleLinkedListImplementations {
 	public int lastIndexOf(int target) {
 	    int lastIndex = -1; // Initialize to -1 to represent not found.
 	    int currentIndex = 0; // Start at the first node.
-	    Node current = head; // Start at the head of the list.
+	    ListNode current = head; // Start at the head of the list.
 
 	    while (current != null) {
 	        if (current.data == target) {
@@ -185,7 +190,7 @@ public class SingleLinkedListImplementations {
 	
 	//====================================Remove all(index)==============================================
 	public void removeAll(int value) {
-		Node currentNode=head, previousNode=null;
+		ListNode currentNode=head, previousNode=null;
 		
 		while(currentNode!=null){
 			if(currentNode.data==value) {
@@ -200,6 +205,10 @@ public class SingleLinkedListImplementations {
 				}
 				size--;
 			}
+			else{
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
 		}
 		
 		
@@ -208,9 +217,9 @@ public class SingleLinkedListImplementations {
 	//=====================================reverse the node============================================
 	//Reverse the node
 		public void reverseTheNode() {
-			Node current=head;
-			Node prev=null;
-			Node tempNode;
+			ListNode current=head;
+			ListNode prev=null;
+			ListNode tempNode;
 			while(current!=null) {
 				 tempNode=current.next;
 				 current.next=prev;
