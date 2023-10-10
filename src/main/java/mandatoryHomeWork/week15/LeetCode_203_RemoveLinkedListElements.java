@@ -2,7 +2,7 @@ package mandatoryHomeWork.week15;
 
 
 public class LeetCode_203_RemoveLinkedListElements {
-	
+	//https://leetcode.com/problems/remove-linked-list-elements/
 	public class ListNode{
 		int val;
 		ListNode next;
