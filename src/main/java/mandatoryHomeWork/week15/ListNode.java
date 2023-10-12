@@ -2,16 +2,16 @@ package mandatoryHomeWork.week15;
 
 
 public class ListNode {
-	int data;
+	int val;
 	ListNode next;
 	ListNode() {
 	}
 	ListNode(int val) {
-		this.data = val;
+		this.val = val;
 	}
 
 	ListNode(int val, ListNode next) {
-		this.data = val;
+		this.val = val;
 		this.next = next;
 	}
 }

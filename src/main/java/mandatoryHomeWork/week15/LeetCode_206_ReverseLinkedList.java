@@ -22,7 +22,7 @@ public class LeetCode_206_ReverseLinkedList {
         ListNode currentHead = null;
 
 		while(head!=null) {
-			currentHead=new ListNode(head.data,currentHead);
+			currentHead=new ListNode(head.val,currentHead);
 			head = head.next;
 		}
 		return currentHead;
