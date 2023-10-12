@@ -20,12 +20,12 @@ public class LeetCode_203_RemoveLinkedListElements {
 		 ListNode newHead = null;
 		 ListNode newTail = null;
 		    while (head != null) {
-		        if (head.data != val) {
+		        if (head.val != val) {
 		            if (newHead == null) {
-		                newHead = new ListNode(head.data);
+		                newHead = new ListNode(head.val);
 		                newTail = newHead;
 		            } else {
-		                newTail.next = new ListNode(head.data);
+		                newTail.next = new ListNode(head.val);
 		                newTail = newTail.next;
 		            }
 		        }

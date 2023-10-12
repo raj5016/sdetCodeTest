@@ -31,7 +31,7 @@ public class SingleLinkedListImplementations {
 	 public void displayNodes(ListNode node) {
 		 ListNode current=node;
 		 while(current!=null) {
-			 System.out.print(current.data+" ");
+			 System.out.print(current.val+" ");
 			 current=current.next;
 		 }
 		 System.out.println();
@@ -40,7 +40,7 @@ public class SingleLinkedListImplementations {
 	public void displayNodes() {
 		ListNode current = head;
 		while (current != null) {
-			System.out.print(current.data + " ");
+			System.out.print(current.val + " ");
 			current = current.next;
 		}
 		System.out.println();
@@ -69,7 +69,7 @@ public class SingleLinkedListImplementations {
 	    }
 
 	    // Check if the head node contains the data to be removed.
-	    if (head.data == dataToRemove) {
+	    if (head.val == dataToRemove) {
 	        head = head.next;
 	        size--;
 	        return;
@@ -80,7 +80,7 @@ public class SingleLinkedListImplementations {
 	    ListNode current = head;
 
 	    // Traverse the list to find the node with the data to remove.
-	    while (current != null && current.data != dataToRemove) {
+	    while (current != null && current.val != dataToRemove) {
 	        previous = current;
 	        current = current.next;
 	    }
@@ -177,7 +177,7 @@ public class SingleLinkedListImplementations {
 	    ListNode current = head; // Start at the head of the list.
 
 	    while (current != null) {
-	        if (current.data == target) {
+	        if (current.val == target) {
 	            lastIndex = currentIndex;
 	        }
 
@@ -193,7 +193,7 @@ public class SingleLinkedListImplementations {
 		ListNode currentNode=head, previousNode=null;
 		
 		while(currentNode!=null){
-			if(currentNode.data==value) {
+			if(currentNode.val==value) {
 				if(previousNode==null) {//for head
 					head=head.next;
 				}else if(currentNode.next==null) { //for tail
