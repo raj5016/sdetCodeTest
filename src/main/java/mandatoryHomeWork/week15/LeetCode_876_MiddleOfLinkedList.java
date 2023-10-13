@@ -16,7 +16,7 @@ public class LeetCode_876_MiddleOfLinkedList {
 	
 	@Test
 	public void test1() {
-		SingleLinkedListImplementations obj1 = new SingleLinkedListImplementations();
+		SingleLinkedListImplementations obj1 = new SingleLinkedListImplementations();//object creation
 		ListNode head = middleNode(obj1.addNode(new int[] {1,2,3,4,5,6}));
 		System.out.println("Node from middle list:");
 		obj1.displayNodes(head);
