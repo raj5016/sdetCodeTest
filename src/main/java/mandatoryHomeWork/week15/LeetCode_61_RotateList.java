@@ -22,8 +22,7 @@ public class LeetCode_61_RotateList {
 
 		// 1.find the length of given node
 		int length = 1;
-        ListNode tail = head;
-        
+        ListNode tail = head;  //tail=1 2 3 4 5 
         while (tail.next != null) {
             tail = tail.next;
             length++;
@@ -37,15 +36,18 @@ public class LeetCode_61_RotateList {
 		}
 
 		// 3.Find the new head and new tail.
-		ListNode newTail = head;
-		for (int i = 0; i < length - k - 1; i++) {
-			newTail = newTail.next;
+		ListNode newTail = head;  //newTail=1 2 3 4 5 
+
+		for (int i = 0; i < length - k - 1; i++) { 
+			newTail = newTail.next;   //newTail will be in 3
 		}
 
 		// 4.Perform the rotation.
-		ListNode newHead = newTail.next;
+		ListNode newHead = newTail.next; //newHead  =4 5
+
 		newTail.next = null;
 		tail.next = head;
+		
 
 		return newHead;
 	}   

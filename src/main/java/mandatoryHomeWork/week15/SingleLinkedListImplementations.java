@@ -1,5 +1,6 @@
 package mandatoryHomeWork.week15;
 
+import java.util.Random;
 
 public class SingleLinkedListImplementations {
 	
@@ -27,6 +28,28 @@ public class SingleLinkedListImplementations {
 		return head;
 	 }
 	 
+	 //===================================Add nodes to create a cycle with random position==============
+	 
+	 public ListNode createCycleWithRandomPosition(ListNode head) {
+		 	int size=getSizeWithLoop(head);
+	        if (size <= 1) {
+	            System.out.println("Cannot create a cycle with less than 2 nodes.");
+	            return head;
+	        }
+
+	        Random rand = new Random();
+	        int cyclePosition = rand.nextInt(size);
+	        System.out.println("index for pointing tail next :" + cyclePosition);
+	        ListNode currentNode = head;
+	        for (int i = 0; i < cyclePosition; i++) {
+	            currentNode = currentNode.next;
+	        }
+
+	        tail.next = currentNode; // Create a cycle by connecting the tail to the node at the random position.
+
+	        return head;
+	    }
+	 
 	 //================================== Display Nodes===============================================
 	 public void displayNodes(ListNode node) {
 		 ListNode current=node;
@@ -52,9 +75,9 @@ public class SingleLinkedListImplementations {
 	}
 	
 	//=================================another way of getting size with loop==========================
-	public int getSizeWithLoop() {
+	public int getSizeWithLoop(ListNode node) {
 		int size=0;
-		ListNode current=head;
+		ListNode current=node;
 		while(current!=null) {
 			size++;
 			current=current.next;
