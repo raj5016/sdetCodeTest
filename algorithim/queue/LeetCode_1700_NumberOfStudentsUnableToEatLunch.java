@@ -32,7 +32,6 @@ public class LeetCode_1700_NumberOfStudentsUnableToEatLunch {
  Space complexity- O(N) , where N is the number of students.
 
   */
-	
     public int countStudents(int[] students, int[] sandwiches) {
         ArrayDeque<Integer> queue = new ArrayDeque<>();
         for(int each : students)
