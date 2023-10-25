@@ -46,5 +46,27 @@ public class LeetCode_876_MiddleOfLinkedList {
 
 		return current;
 	}
+	
+	@Test
+	public void test2() {
+		SingleLinkedListImplementations obj1 = new SingleLinkedListImplementations();//object creation
+		ListNode head = findMiddleNode(obj1.addNode(new int[] {1,2,3,4,5,6}));
+		System.out.println("Node from middle list:");
+		obj1.displayNodes(head);
+	}
+	
+	public ListNode findMiddleNode(ListNode head) {
+		if (head == null) {
+			return null;
+		}
+		ListNode fast = head;
+		ListNode slow = head;
+
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		return slow;
+	}
 
 }

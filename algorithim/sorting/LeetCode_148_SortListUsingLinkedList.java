@@ -7,8 +7,6 @@ import mandatoryHomeWork.week15.SingleLinkedListImplementations;
 
 public class LeetCode_148_SortListUsingLinkedList {
 	
-	//https://leetcode.com/problems/sort-list/
-	
 	@Test
 	public void test() {
 		SingleLinkedListImplementations obj1 = new SingleLinkedListImplementations();

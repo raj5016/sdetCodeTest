@@ -2,8 +2,10 @@ package mandatoryHomeWork.week14;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.junit.Assert;
@@ -62,4 +64,41 @@ public class LeetCode_448_FindAllNumbersDisappearedInAnArrays {
 	        
 	        return result;
 	    }
+	    
+	    //By List
+	    
+	    public List<Integer> findDisappearedNumbers_byList(int[] nums) {
+		  int[]  a=new int[nums.length+1];
+		  List<Integer> list=new ArrayList<Integer>();
+		  
+		  for (int i = 0; i < nums.length; i++) {
+			  a[nums[i]]++;
+		  }
+		  
+		  for (int i = 1; i < nums.length+1; i++) {
+			 if(a[i]==0) {
+				 list.add(i);
+			}
+	  }
+		return list;
+	  }
+    
+    
+//By HashMap
+     public List<Integer> findDisappearedNumbers_byHmap(int[] nums) {
+		  Map<Integer,Integer>  hmap=new HashMap<Integer,Integer>();
+		  List<Integer>  list=new ArrayList<Integer>();
+		  
+		  for (int num : nums) {
+			hmap.put(num,hmap.getOrDefault(num, 0)+1);
+		  }
+		  
+		  for (int i = 1; i < nums.length+1; i++) {
+			if(!hmap.containsKey(i)) {
+				list.add(i);
+			}
+		}
+		 return list;
+		  
+	  }
 	}

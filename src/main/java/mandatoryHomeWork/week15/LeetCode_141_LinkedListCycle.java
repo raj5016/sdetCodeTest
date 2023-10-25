@@ -33,5 +33,26 @@ public class LeetCode_141_LinkedListCycle {
 		return false;
 	        
 	  }
-
+	 
+	 @Test
+		public void test1() {
+			ListNode head=obj.addNode(new int[] {3,2,0,-4,5});
+			obj.displayNodes(head);
+			Assert.assertEquals(true, hasCycleBySlowAndFast(obj.createCycleWithRandomPosition(head)));
+		}
+	 
+	 public boolean hasCycleBySlowAndFast(ListNode head) {
+		ListNode fast=head;
+		ListNode slow=head;
+		
+		while(fast!=null && fast.next!=null) {
+			slow=slow.next;
+			fast=fast.next.next;
+			if(slow==fast) {
+				return true;
+			}
+		}
+		 
+		return false;
+	  }
 }
