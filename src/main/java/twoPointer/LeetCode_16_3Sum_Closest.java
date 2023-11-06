@@ -12,6 +12,7 @@ public class LeetCode_16_3Sum_Closest {
 	@Test
 	public void test() {
 		Assert.assertEquals(1, threeSumClosest(new int[] {-1,2,1,-4}, 2));
+		Assert.assertEquals(1, threeSumClosest_bruteForce(new int[] {-1,2,1,-4}, 2));
 	}
 	
 	//By Brute force
