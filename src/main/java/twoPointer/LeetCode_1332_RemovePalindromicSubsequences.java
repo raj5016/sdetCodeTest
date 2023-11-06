@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.testng.Assert;
 
 public class LeetCode_1332_RemovePalindromicSubsequences {
+	//https://leetcode.com/problems/remove-palindromic-subsequences/solutions/
 	
 	@Test
 	public void test() {
@@ -25,6 +26,8 @@ public class LeetCode_1332_RemovePalindromicSubsequences {
 		    // 1. Remove all 'a's from the string.
 		    // 2. Remove all 'b's from the string.
 		    return 2;
+		    
+		    // return isPalindrome(s)==true?1:2;
 	  }
 	
 	public boolean isPalindrome(String s) {
