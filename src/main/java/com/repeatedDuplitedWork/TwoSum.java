@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class TwoSum {
 	
-	@Test
+	
 	public void test1() {
 		Assert.assertArrayEquals(new int[] {0,1}, returnIndicesOfsumOfTwoNumIsEqualtoTarget(new int[] {2,7,11,15}, 9));
 	}

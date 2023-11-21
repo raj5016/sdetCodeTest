@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class JiraTestCaseCreation {
 	
 	WebDriver driver;
-	String summary="TestCase creation by Govind";
+	String summary="TestCase creation by Govind1";
 	@Test
 	public void createTestCase() throws InterruptedException{
 		

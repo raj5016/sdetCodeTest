@@ -13,7 +13,8 @@ import org.testng.annotations.Test;
 public class TC001_CreateLegalEntity {
 
 	WebDriver driver;
-	String expectedLegalEntityName="Salesforce Automation by Govind";
+	String expectedLegalEntityName="Salesforce Automation by AutoRaj";
+	
 	@Test
 	public void findDriverName() {
 		
