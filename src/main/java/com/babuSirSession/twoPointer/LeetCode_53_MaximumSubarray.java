@@ -1,4 +1,4 @@
-package BabuSirSession;
+package com.babuSirSession.twoPointer;
 
 import org.junit.Test;
 

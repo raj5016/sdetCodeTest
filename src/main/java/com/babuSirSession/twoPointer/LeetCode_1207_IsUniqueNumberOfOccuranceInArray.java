@@ -1,4 +1,4 @@
-package BabuSirSession;
+package com.babuSirSession.twoPointer;
 
 import java.util.HashMap;
 import java.util.HashSet;
