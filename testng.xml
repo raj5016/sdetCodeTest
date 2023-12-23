@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ParallelRunTry" parallel="methods" thread-count="2" >
-  <test thread-count="5" name="Test" >
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="mandatoryHomeWork.seleniumPractise.threadLocal.LoginTestRunner"/>
+      <class name="mandatoryHomeWork.seleniumPractise.salesForce.TC001_CreateLegalEntity"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

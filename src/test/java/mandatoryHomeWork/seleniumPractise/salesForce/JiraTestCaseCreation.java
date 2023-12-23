@@ -9,10 +9,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 public class JiraTestCaseCreation {
 	
 	WebDriver driver;
-	String summary="TestCase creation by Govind1";
+	Faker faker=new Faker();
+	String firstName = faker.name().firstName();
+	String summary="TestCase creation by "+firstName+"";
 	@Test
 	public void createTestCase() throws InterruptedException{
 		
