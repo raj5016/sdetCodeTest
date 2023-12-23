@@ -10,10 +10,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 public class TC001_CreateLegalEntity {
 
 	WebDriver driver;
-	String expectedLegalEntityName="Salesforce Automation by AutoRaj";
+	Faker faker=new Faker();
+	String firstName = faker.name().firstName();
+	String expectedLegalEntityName="Salesforce Automation by "+firstName+"";
 	
 	@Test
 	public void findDriverName() {
@@ -26,7 +30,7 @@ public class TC001_CreateLegalEntity {
 		driver.manage().window().maximize();
 		driver.get("https://login.salesforce.com/");
 		driver.findElement(By.id("username")).sendKeys("mgovindarajm@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("Qwerty@5016");
+		driver.findElement(By.id("password")).sendKeys("Qwerty@501626");
 		driver.findElement(By.id("Login")).click();
 		driver.findElement(By.xpath("//div[@class='slds-icon-waffle']")).click();
 		driver.findElement(By.xpath("//button[text()='View All']")).click();
